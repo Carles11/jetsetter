@@ -10,8 +10,16 @@ export const addNewItem = (value) => ({
   }
 });
 
-export const toggleItem = () => ({});
+export const toggleItem = (id) => ({
+  type: TOGGLE_ITEM,
+  id,
+});
 
-export const removeItem = () => ({});
+export const removeItem = (id) => ({
+  type: REMOVE_ITEM,
+  id,
+});
 
-export const markAllAsUnpacked = () => ({});
+export const markAllAsUnpacked = (value) => ({
+  type: MARK_ALL_AS_UNPACKED,
+});

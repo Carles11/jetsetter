@@ -25,7 +25,7 @@ class Application extends Component {
     items: defaultState,
   };
 
-  addItem = item => {
+  addNewItem = item => {
     this.setState({ items: [item, ...this.state.items] });
   };
 
@@ -53,7 +53,7 @@ class Application extends Component {
 
     return (
       <div className="Application">
-        <NewItem onSubmit={this.addItem} />
+        <NewItem onSubmit={this.addNewItem} />
         <CountDown {...this.state} />
         <Items
           title="Unpacked Items"
